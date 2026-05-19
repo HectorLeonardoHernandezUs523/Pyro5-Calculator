@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import Pyro5.api
 import logging
+import os
 
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
@@ -114,5 +115,6 @@ def status():
     except:
         return jsonify({'conectado': False, 'info': None})
 
-if __name__ == '__main__':
+if _port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, port=port
     app.run(debug=False, port=5000, threaded=True)
