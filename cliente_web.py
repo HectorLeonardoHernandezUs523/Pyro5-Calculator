@@ -115,6 +115,6 @@ def status():
     except:
         return jsonify({'conectado': False, 'info': None})
 
-if _port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, port=port
-    app.run(debug=False, port=5000, threaded=True)
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, port=port, threaded=True)
